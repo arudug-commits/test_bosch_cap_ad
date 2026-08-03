@@ -54,8 +54,8 @@ context CDSView {
    
     define view![ItemView] as
         select from transaction.poitems{
-            PARENT_KEY.PARTNER_GUID.NODE_KEY as![BusinessPartnerNodeKey],
-            PRODUCT_GUID.NODE_KEY as![ProductNodeKey],
+            key PARENT_KEY.PARTNER_GUID.NODE_KEY as![BusinessPartnerNodeKey],
+            key PRODUCT_GUID.NODE_KEY as![ProductNodeKey],
             CURRENCY as![CurrencyCode],
             GROSS_AMOUNT as![GrossAmount],
             NET_AMOUNT as![NetAmount],

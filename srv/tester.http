@@ -9,7 +9,7 @@ http://localhost:4004/CatalogService/$metadata
 
 ### GET All employees
 http://localhost:4004/CatalogService/EmployeeSet
-
+Authorization: Basic arun:1234
 
 ### Get Single employee by ID
 http://localhost:4004/CatalogService/EmployeeSet/02BD2137-0890-1EEA-A6C2-BB55C19807FB
@@ -36,6 +36,7 @@ http://localhost:4004/CatalogService/EmployeeSet?$select=nameFirst,nameLast
 
 ### Create a new Employee
 POST http://localhost:4004/CatalogService/EmployeeSet
+Authorization: Basic arun2:1234
 Content-Type: application/json
 
 
@@ -43,7 +44,7 @@ Content-Type: application/json
   "nameFirst": "Cristiano",
   "nameLast": "Ronaldo",
   "bankName": "My Bank of San Francisco",
-  "salaryAmount":1000000,
+  "salaryAmount":10000,
   "Currency_code":"USD"
 
 }
